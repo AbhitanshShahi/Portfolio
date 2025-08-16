@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Abhitansh Shahi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        html{
+          scroll-behavior: smooth;
+        }
+        .animated-gradient {
+            background-size: 200% 200%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .typed-cursor {
+            color: #6366f1;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-lg border-b border-slate-800">
+      <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <a href="#" class="flex gap-2 items-center">
+        <img class="h-12 w-12" src="logo.svg" alt="Abhitansh Shahi Logo" />
+        <span class="font-medium text-xl text-white">Abhitansh Shahi</span>
+        </a>
+      <nav id="nav-links" class="hidden md:flex absolute md:static top-16 left-0 w-full md:w-auto bg-slate-900/90 backdrop:blur-lg duration-300 md:bg-transparent">
+          <ul class="flex flex-col md:flex-row items-center gap-8 w-full md:w-auto py-8 md:py-0">
+              <li><a href="#about" class="text-slate-300 hover:text-indigo-400 transition-colors duration-300">About</a></li>
+              <li><a href="#skills" class="text-slate-300 hover:text-indigo-400 transition-colors duration-300">Skills</a></li>
+              <li><a href="#projects" class="text-slate-300 hover:text-indigo-400 transition-colors duration-300">Projects</a></li>
+              <li><a href="#contact" class="text-slate-300 hover:text-indigo-400 transition-colors duration-300">Contact</a></li>
+      </ul>
+    </nav>
+        <div class="flex items-center gap-10">
+          <a href="https://drive.google.com/file/d/11MHwH0COejH6BroOYR0_yxw5YSqegTiJ/view?usp=sharing" target="_blank" class="sm:block bg-indigo-600/80 rounded-lg cursor-pointer hover:scale-105 hover:bg-indigo-500/90 transition-transform duration-250 px-4 py-2 text-white text-md visited:text-white">Resume</a>
+        <button id="nav-toggle" class="md:hidden text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+    </div>
+
+  </div>
+</header>
+
+    <main>
+      <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div
+          class="absolute inset-0 -z-10 h-full w-full bg-slate-950 bg-[radial-gradient(circle_800px_at_100%_200px,#7e22ce,transparent)]"
+        ></div>
+
+        <div class="text-center px-6">
+          <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">
+            Hi, I'm Abhitansh Shahi
+          </h1>
+          <p class="text-2xl md:text-4xl text-slate-300 font-medium">
+            I'm a <span id="typed" class="text-indigo-400"></span>
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="py-20">
+        <div class="container mx-auto px-8">
+        <div class="flex flex-col justify-center gap-1 text-center px-10">
+            <h1 class="font-bold font-mono text-5xl text-white">About Me</h1>
+            <p class="text-slate-400 mt-2 text-lg">A little of my journey</p>
+        </div>
+        <div class="flex flex-col items-center gap-12">
+        <div class="w-1/3">
+            <img src="circle.png" alt="Abhitansh Image" class="shadow-lg w-full max-w-[320px] h-auto aspect-square rounded-full mx-auto mt-4">
+        </div>
+        <div class="text-2xl text-slate-300 space-y-4 mx-10">
+        <p>Hello! I’m Abhitansh Shahi, a passionate and creative front-end developer with a knack for building beautiful, functional, and user-friendly websites. My journey into coding began with a simple “Hello, World!” and has since grown into a deep passion for web development, problem-solving, and creating seamless digital experiences.</p>
+        <p>I’m a front-end developer specializing in crafting responsive and user-friendly interfaces using HTML, CSS, JavaScript, and Tailwind CSS. I have a knack for turning ideas into clean, efficient, and visually appealing web experiences. When I’m not building websites, I’m exploring new web technologies, improving my skills, and enjoying Manga.</p>
+        </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-20 md:py-32 bg-slate-950">
+        <div class="container px-6 mx-auto">
+        <div class="flex flex-col gap-1 justify-center text-center mb-12">
+            <h2 class="text-5xl font-bold text-white">My Tech Stack</h2>
+            <p class="text-slate-400 mt-2 text-lg">Technologies I work with.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8">
+        <div class="flex flex-col items-center justify-center aspect-square p-4 bg-slate-800/50 rounded-lg hover:-translate-y-2 transition-transform duration-300 w-1/2 sm:w-1/3 lg:w-1/6 max-w-[150px] cursor-pointer">
+            <svg class="w-16 h-16 mb-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            <span class="font-semibold text-white text-center">HTML 5</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-lg hover:-translate-y-2 transition-transform duration-300 w-1/2 sm:w-1/3 lg:w-1/6 max-w-[150px] cursor-pointer">
+            <svg class="w-16 h-16 mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h8a2 2 0 002-2v-4a2 2 0 00-2-2h-8a2 2 0 00-2 2v4a2 2 0 002 2z"></path></svg>
+            <span class="font-semibold text-white text-center">CSS3</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-lg hover:-translate-y-2 transition-transform duration-300 w-1/2 sm:w-1/3 lg:w-1/6 max-w-[150px] cursor-pointer">
+            <svg class="w-16 h-16 mb-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            <span class="font-semibold text-white text-center">JavaScript</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-lg hover:-translate-y-2 transition-transform duration-300 w-1/2 sm:w-1/3 lg:w-1/6 max-w-[150px] cursor-pointer">
+          <svg class="w-16 h-16 mb-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          <span class="font-semibold text-white">Tailwind CSS</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-lg hover:-translate-y-2 transition-transform duration-300 w-1/2 sm:w-1/3 lg:w-1/6 max-w-[150px] cursor-pointer">
+          <svg class="h-16 w-16 mb-4" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 346 512.36"><g fill-rule="nonzero"><path fill="#00B6FF" d="M172.53 246.9c0-42.04 34.09-76.11 76.12-76.11h11.01c.3.01.63-.01.94-.01 47.16 0 85.4 38.25 85.4 85.4 0 47.15-38.24 85.39-85.4 85.39-.31 0-.64-.01-.95-.01l-11 .01c-42.03 0-76.12-34.09-76.12-76.12V246.9z"/><path fill="#24CB71" d="M0 426.98c0-47.16 38.24-85.41 85.4-85.41l87.13.01v84.52c0 47.65-39.06 86.26-86.71 86.26C38.67 512.36 0 474.13 0 426.98z"/><path fill="#FF7237" d="M172.53.01v170.78h87.13c.3-.01.63.01.94.01 47.16 0 85.4-38.25 85.4-85.4C346 38.24 307.76 0 260.6 0c-.31 0-.64.01-.95.01h-87.12z"/><path fill="#FF3737" d="M0 85.39c0 47.16 38.24 85.4 85.4 85.4h87.13V.01H85.39C38.24.01 0 38.24 0 85.39z"/><path fill="#874FFF" d="M0 256.18c0 47.16 38.24 85.4 85.4 85.4h87.13V170.8H85.39C38.24 170.8 0 209.03 0 256.18z"/></g></svg>
+          <span class="font-semibold text-white">Figma</span>
+        </div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="py-20 md:py-32">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h1 class="font-bold text-4xl md:text-5xl text-white">My Projects</h1>
+      <p class="text-slate-400 mt-2 text-lg">A few of the projects I've worked on</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-8">
+      <div class="bg-slate-900 rounded-lg overflow-hidden w-full sm:w-1/2 lg:w-1/3 max-w-sm flex flex-col">
+        <img src="BitHunt.png" alt="BiteHunt" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="font-bold text-2xl text-white mb-2">BiteHunt</h3>
+          <p class="text-slate-400 mb-4 flex-grow">A Webpage built using HTML, CSS and JS, Using TheMealDB API to get recipes for your cravings.</p>
+          <div class="flex gap-4 mt-auto">
+            <a href="https://abhitanshshahi.github.io/recipe_finder/" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-medium">Live Demo</a>
+            <a href="https://github.com/AbhitanshShahi/recipe_finder.git" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-medium">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-900 rounded-lg overflow-hidden w-full sm:w-1/2 lg:w-1/3 max-w-sm flex flex-col">
+        <img src="Odessey.png" alt="Odessey" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="font-bold text-2xl text-white mb-2">Odessey</h3>
+          <p class="text-slate-400 mb-4 flex-grow">A gamified version of a To-Do list that helps you keep track of your day and rewards you on each completed task.</p>
+          <div class="flex gap-4 mt-auto">
+            <a href="https://abhitanshshahi.github.io/Odessey/" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-medium">Live Demo</a>
+            <a href="https://github.com/AbhitanshShahi/Odessey.git" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-medium">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-900 rounded-lg overflow-hidden w-full sm:w-1/2 lg:w-1/3 max-w-sm flex flex-col">
+        <img src="RPS-Game.png" alt="RPS-Game" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="font-bold text-2xl text-white mb-2">RPS-Game</h3>
+          <p class="text-slate-400 mb-4 flex-grow">Built using the basics of HTML, CSS and JS, it is a basic rock-paper-scissor game to play and pass your free time.</p>
+          <div class="flex gap-4 mt-auto">
+            <a href="https://abhitanshshahi.github.io/RPS-Game/" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-medium">Live Demo</a>
+            <a href="https://github.com/AbhitanshShahi/RPS-Game.git" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-medium">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="contact" class="py-20 md:py-32 bg-slate-900/50">
+        <div class="flex flex-col justify-center text-center">
+          <h1 class="text-white font-bold text-5xl">Contact Me</h1>
+          <p class="my-5 mx-auto text-lg">I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hi, feel free to reach out!</p>
+        </div>
+        <div class="flex justify-center gap-5">
+          <a class="transform transition duration-300 hover:scale-110 hover:drop-shadow-lg" href="https://www.linkedin.com/in/abhitansh-shahi-543859200/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48">
+<path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+</svg></a>
+        <a class="transform transition duration-300 hover:scale-110 hover:drop-shadow-lg" href="mailto:abhitanshshahi@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="70" viewBox="0 0 48 48">
+<path fill="#e0e0e0" d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z"></path><path fill="#d9d9d9" d="M26,40.5h16.5c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11L26,40.5z"></path><path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z"></path><path fill="#e0e0e0" d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z"></path><path fill="#ca3737" d="M42.5,9.5h-37C3.567,9.5,2,9.067,2,11v26c0,1.933,1.567,3.5,3.5,3.5H7V12h34v28.5h1.5c1.933,0,3.5-1.567,3.5-3.5V11C46,9.067,44.433,9.5,42.5,9.5z"></path><path fill="#f5f5f5" d="M42.5,7.5H24H5.5C3.567,7.5,2,9.036,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.036,44.433,7.5,42.5,7.5z"></path><path fill="#e84f4b" d="M43.246,7.582L24,21L4.754,7.582C3.18,7.919,2,9.297,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.297,44.82,7.919,43.246,7.582z"></path>
+</svg></a>
+        <a class="transform transition duration-300 hover:scale-110 hover:drop-shadow-lg" href="https://github.com/AbhitanshShahi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48">
+<path fill="#2100c4" d="M24,4C12.954,4,4,12.954,4,24c0,8.887,5.801,16.411,13.82,19.016h12.36 C38.199,40.411,44,32.887,44,24C44,12.954,35.046,4,24,4z"></path><path fill="#ddbaff" d="M37,23.5c0-2.897-0.875-4.966-2.355-6.424C35.591,15.394,34.339,12,34.339,12 c-2.5,0.5-4.367,1.5-5.609,2.376C27.262,14.115,25.671,14,24,14c-1.71,0-3.339,0.118-4.834,0.393 c-1.242-0.879-3.115-1.889-5.632-2.393c0,0-1.284,3.492-0.255,5.146C11.843,18.6,11,20.651,11,23.5 c0,6.122,3.879,8.578,9.209,9.274C19.466,33.647,19,34.764,19,36l0,0.305c-0.163,0.045-0.332,0.084-0.514,0.108 c-1.107,0.143-2.271,0-2.833-0.333c-0.562-0.333-1.229-1.083-1.729-1.813c-0.422-0.616-1.263-2.032-3.416-1.979 c-0.376-0.01-0.548,0.343-0.5,0.563c0.043,0.194,0.213,0.5,0.896,0.75c0.685,0.251,1.063,0.854,1.438,1.458 c0.418,0.674,0.417,2.468,2.562,3.416c1.53,0.677,2.988,0.594,4.097,0.327l0.001,3.199c0,0.639-0.585,1.125-1.191,1.013 C19.755,43.668,21.833,44,24,44c2.166,0,4.243-0.332,6.19-0.984C29.584,43.127,29,42.641,29,42.002L29,36 c0-1.236-0.466-2.353-1.209-3.226C33.121,32.078,37,29.622,37,23.5z"></path><path fill="#ddbaff" d="M15,18l3.838-1.279c1.01-0.337,1.231-1.684,0.365-2.302l-0.037-0.026 c-2.399,0.44-4.445,1.291-5.888,2.753C13.596,17.658,14.129,18,15,18z"></path><path fill="#ddbaff" d="M28.693,14.402c-0.878,0.623-0.655,1.987,0.366,2.327L32.872,18c0.913,0,1.461-0.37,1.773-0.924 c-1.46-1.438-3.513-2.274-5.915-2.701C28.717,14.384,28.705,14.393,28.693,14.402z"></path><path fill="#ddbaff" d="M24,31c-1.525,0-2.874,0.697-3.791,1.774C21.409,32.931,22.681,33,24,33s2.591-0.069,3.791-0.226 C26.874,31.697,25.525,31,24,31z"></path>
+</svg></a>
+          <a class="transform transition duration-300 hover:scale-110 hover:drop-shadow-lg" href="https://x.com/AbhitanshShahi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0,0,256,256">
+<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M11,4c-3.866,0 -7,3.134 -7,7v28c0,3.866 3.134,7 7,7h28c3.866,0 7,-3.134 7,-7v-28c0,-3.866 -3.134,-7 -7,-7zM13.08594,13h7.9375l5.63672,8.00977l6.83984,-8.00977h2.5l-8.21094,9.61328l10.125,14.38672h-7.93555l-6.54102,-9.29297l-7.9375,9.29297h-2.5l9.30859,-10.89648zM16.91406,15l14.10742,20h3.06445l-14.10742,-20z"></path></g></g>
+</svg></a>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
